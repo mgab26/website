@@ -31,24 +31,33 @@ function () {
   
   return (
     <>
-      <table ref={tableRef}>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John</td>
-            <td>john@example.com</td>
-          </tr>
-          <tr>
-            <td>Mike</td>
-            <td><b>mike@example.com</b></td>
-          </tr>
-        </tbody>
-      </table>
+      <table>
+  <caption>Delivery slots:</caption>
+  <tr>
+    <td></td>
+    <th scope="col">Monday</th>
+    <th scope="col">Tuesday</th>
+    <th scope="col">Wednesday</th>
+    <th scope="col">Thursday</th>
+    <th scope="col">Friday</th>
+  </tr>
+  <tr>
+    <th scope="row">09:00 – 11:00</th>
+    <td>Closed</td>
+    <td>Open</td>
+    <td>Open</td>
+    <td>Closed</td>
+    <td>Closed</td>
+  </tr>
+  <tr>
+    <th scope="row">11:00 – 13:00</th>
+    <td>Open</td>
+    <td>Open</td>
+    <td>Closed</td>
+    <td>Closed</td>
+    <td>Closed</td>
+  </tr>
+</table>
       <div ref={wrapperRef} />
     </>
   );
